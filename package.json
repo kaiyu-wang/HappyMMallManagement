@@ -1,0 +1,8 @@
+{
+  "name": "HappyMallSystem",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:kaiyu-wang/cathywky123-gmail.com.git",
+  "author": "Catherine Wang <cathywky123@gmail.com>",
+  "license": "MIT"
+}
