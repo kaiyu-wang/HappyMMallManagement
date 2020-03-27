@@ -1,8 +1,14 @@
-import React from 'react';
+import React        from 'react';
 import { Link }     from 'react-router-dom';
-import './index.scss'
-import PageTitle    from 'component/page-title/index.jsx';
 
+import MUtil        from 'util/mm.jsx'
+import Statistic    from 'service/statistic-service.jsx'
+
+const _mm           = new MUtil();
+const _statistic    = new Statistic();
+
+import PageTitle    from 'component/page-title/index.jsx';
+import './index.scss'
 class Home extends React.Component{
     constructor(props){
         super(props);
@@ -13,14 +19,14 @@ class Home extends React.Component{
         }
     }
     componentDidMount(){
-        //this.loadCount();
+        this.loadCount();
     }
     loadCount(){
-        // _statistic.getHomeCount().then(res => {
-        //     this.setState(res);
-        // }, errMsg => {
-        //     _mm.errorTips(errMsg);
-        // });
+        _statistic.getHomeCount().then(res => {
+            this.setState(res);
+        }, errMsg => {
+            _mm.errorTips(errMsg);
+        });
     }
     render(){
         return (

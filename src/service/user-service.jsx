@@ -40,15 +40,15 @@ class User{
             url     : '/user/logout.do'
         });
     }
-    // getUserList(pageNum){
-    //     return _mm.request({
-    //         type    : 'post',
-    //         url     : '/manage/user/list.do',
-    //         data    : {
-    //             pageNum : pageNum
-    //         }
-    //     });
-    // }
+    getUserList(pageNum){
+        return _mm.request({
+            type    : 'post',
+            url     : '/manage/user/list.do',
+            data    : {
+                pageNum : pageNum
+            }
+        });
+    }
 }
 
 export default User;
