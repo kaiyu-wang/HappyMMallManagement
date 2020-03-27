@@ -1,2 +1,2 @@
-# cathywky123-gmail.com
+# HappyMMallManagement
 Happy Mall Management System
